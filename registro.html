@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Inicio de sesion</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Luis Lombardo">
+    </head>
+    <body style="background-color:rgba(171, 174, 219, 0.39);">
+        <center>
+            <h1>REGÍSTRATE</h1>
+        </center>        
+        <p>Complete el siguiente formulario de registro:</p>
+        
+        <form action="procesar.php" method="post" enctype="multipart/form-data">
+            
+            <fieldset>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required >
+                <br>
+                <br> 
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" >
+                <br>
+                <br>         
+                <label for="nombre_usuario">Nombre de Usuario:</label>
+                <input type="text" id="nombre_usuario" name="nombre_usuario" required>
+                <br> 
+                <br>        
+                <label for="crea_contraseña">Crea una Contraseña:</label>
+                <input type="password" id="contraseña" name="contraseña" required>
+                <br> 
+                <br>        
+                <label for="confirma_contraseña">Comfirma la Contraseña:</label>
+                <input type="password" id="repetir_contraseña" name="repetir_contraseña" required>
+                <br>
+                <br>
+                <input type="submit" value="Crear cuenta">                
+            </fieldset>
+        </form>
+    </body>
+</html>
